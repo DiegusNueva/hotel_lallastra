@@ -1,1 +1,0 @@
-alert("Ya vamos tirando");
