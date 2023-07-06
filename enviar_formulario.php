@@ -2,14 +2,14 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $nombre = $_POST['nombre'];
   $correo = $_POST['correo'];
-  $telefono = $_POST['numero']; // Obtener el número de teléfono del formulario
+  $telefono = $_POST['numero']; 
   $mensaje = $_POST['mensaje'];
 
   // Construir el cuerpo del correo electrónico
   $asunto = 'Nuevo mensaje de contacto';
   $contenido = "Nombre: $nombre\n";
   $contenido .= "Correo electrónico: $correo\n";
-  $contenido .= "Teléfono: $telefono\n"; // Agregar el número de teléfono al contenido del mensaje
+  $contenido .= "Teléfono: $telefono\n"; 
   $contenido .= "Mensaje: $mensaje\n";
   
   // Enviar el correo electrónico
